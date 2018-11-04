@@ -3,7 +3,7 @@ const READLINE = require("readline-sync");
 
 // Write your program below!
 // First line should get user input (year) and store it in variable y.
-let year = READLINE.question("Type the year for Easter: ");
+let year = READLINE.question("Enter the year for Easter: ");
 
 let y = year;
 
