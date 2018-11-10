@@ -13,7 +13,7 @@ if(age >= 18 || withAdult == "yes") {
 }
 
 else {
-	console.log("Sorry, you cannot see the movie.")
+	console.log("Sorry, you cannot see the movie.");
 }
 
 // **** Problem 2: Umbrella ****
@@ -59,8 +59,21 @@ let score1 = READLINE.question("Enter the first score: ");
 let score2 = READLINE.question("Enter the second score: ");
 let score3 = READLINE.question("Enter the third score: ");
 
+if(score1 > score2 && score1 > score3) {
+	console.log(score1);
+}
 
+if(score2 > score1 && score2 > score3) {
+	console.log(score2);
+}
 
+if(score3 > score1 && score3 > score2) {
+	console.log(score3);
+}
+
+if(score1 == score2 || score2 == score3 || score3 == score1) {
+	console.log(score1 || score2 || score3);
+}
 
 // **** Problem 5: Phone Shopping ****
 // At a phone store, you can afford various "tiers" of phones based on how
