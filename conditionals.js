@@ -87,6 +87,19 @@ if(score1 == score2 || score2 == score3 || score3 == score1) {
 console.log("*** Problem 5: Phone Shopping ***");
 let money = READLINE.question("How much money do you have?: ");
 
+if(money >= 30 && money <= 99) {
+	console.log("You can afford a prepaid phone!");
+}
+if(money >= 100 && money <= 299) {
+	console.log("You can afford a bottom-tier phone!");
+}
+if(money >= 300 && money <= 599) {
+	console.log("You can afford a middle-tier phone!");
+}
+if(money >= 600) {
+	console.log("You can afford a top-tier phone!");
+}
+
 
 // **** Problem 6: Guess My Number ****
 // Write code that plays a simple number guessing game with a user. You can
@@ -97,3 +110,13 @@ let money = READLINE.question("How much money do you have?: ");
 console.log("*** Problem 6: Guess My Number ***");
 let myNum = 5;
 let guess = READLINE.question("I'm thinking of a number. Guess it: ");
+
+if(guess >= 6) {
+	console.log("Too high");
+}
+if(guess <= 4) {
+	console.log("Too low");
+}
+if(guess == 5) {
+	console.log("You guessed my number!");
+}
