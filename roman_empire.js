@@ -297,7 +297,7 @@ else if(DUEL2 == "divine laser" || DUEL2 == "Divine Laser" && ready == 0) {
 *****************************************************************************`);
 }
 
-if(DUEL1 == "run" || DUEL1 == "Run") {
+else if(DUEL2 == "run" || DUEL2 == "Run") {
 
 	console.log(`
 	   You cannot run from a duel!
